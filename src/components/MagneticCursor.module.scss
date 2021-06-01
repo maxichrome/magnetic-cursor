@@ -1,0 +1,16 @@
+.MagneticCursor {
+  position: absolute;
+	top: 0;
+	left: 0;
+  box-sizing: border-box;
+  border: 2px solid rgba(175, 175, 175, 0.75);
+	// default background (on light bg)
+  background-color: rgba(64, 64, 64, 0.75);
+  transition: background-color 0.45s ease-in-out, width 0.2s ease-out,
+    height 0.2s ease-out, border-radius 0.2s ease-out;
+
+	// background on dark bg
+  &.onDark {
+    background-color: rgba(224, 224, 224, 0.75);
+  }
+}
